@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Іван Трофимчук × NetWorX — комерційна пропозиція</title>
+<meta name="description" content="Індивідуальна комерційна пропозиція NetWorX для Івана Трофимчука: новий сайт і розвиток бренду.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Іван Трофимчук × NetWorX">
+<meta property="og:description" content="Сайт, який підкреслює ваш рівень сьогодні — і створює фундамент для наступного етапу бренду.">
+<meta property="og:image" content="assets/ivan-hero.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b1a18; --ink2:#262420; --ink3:#33302b;
+  --paper:#f2ede4; --paper2:#e9e2d6; --line:rgba(27,26,24,.14); --lineD:rgba(242,237,228,.14);
+  --bronze:#a88a5f; --bronzeL:#c7ab80; --olive:#7b7a5d;
+  --mute:#6f695f; --muteD:#a39c90;
+  --serif:"Cormorant Garamond", "Times New Roman", serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* slide unit: 1u = 1/100 of slide width on desktop */
+  --u:1vw;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-snap-type:y mandatory;background:var(--ink)}
+body{font-family:var(--sans);color:var(--ink);background:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+.scene{position:relative;width:100%;height:calc(var(--u)*56.25);min-height:600px;overflow:hidden;scroll-snap-align:start;display:flex}
+.paper{background:var(--paper);color:var(--ink)}
+.dark{background:var(--ink);color:var(--paper)}
+.pad{padding:calc(var(--u)*5.2) calc(var(--u)*6)}
+.idx{position:absolute;top:calc(var(--u)*2.6);left:calc(var(--u)*6);right:calc(var(--u)*6);display:flex;justify-content:space-between;font-size:calc(var(--u)*.78);letter-spacing:.22em;text-transform:uppercase;font-weight:500;opacity:.62;z-index:3}
+.idx b{font-weight:600;color:var(--bronze);opacity:1}
+.dark .idx b{color:var(--bronzeL)}
+.kicker{font-size:calc(var(--u)*.82);letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--bronze)}
+.dark .kicker{color:var(--bronzeL)}
+.h1{font-family:var(--serif);font-weight:400;line-height:.95;letter-spacing:-.01em}
+.h2{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*4.3);line-height:1.02;letter-spacing:-.005em}
+.h2 i,.h1 i{font-style:italic;color:var(--bronze)}
+.dark .h2 i,.dark .h1 i{color:var(--bronzeL)}
+.lead{font-size:calc(var(--u)*1.12);line-height:1.6;font-weight:300;color:var(--mute);max-width:36em}
+.dark .lead{color:var(--muteD)}
+.rule{height:1px;background:var(--line)}
+.dark .rule{background:var(--lineD)}
+
+/* 01 cover */
+.s1{background:var(--ink);color:var(--paper)}
+.s1 .left{flex:1 1 56%;display:flex;flex-direction:column;justify-content:space-between;padding:calc(var(--u)*6.2) calc(var(--u)*6) calc(var(--u)*4.2);position:relative;z-index:2}
+.s1 .right{flex:0 0 44%;position:relative}
+.s1 .right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%;filter:saturate(.82) contrast(1.02)}
+.s1 .right:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,26,24,.55) 0%,rgba(27,26,24,0) 9%)}
+.s1 .h1{font-size:calc(var(--u)*7.4);color:var(--paper)}
+.s1 .x{display:block;font-style:italic;color:var(--bronzeL);font-size:.56em;margin:.18em 0 .1em .04em}
+.s1 .sub{font-family:var(--serif);font-style:italic;font-size:calc(var(--u)*1.9);line-height:1.3;color:#d9d2c5;max-width:22em;margin-top:calc(var(--u)*2.4)}
+.s1 .meta{display:flex;gap:calc(var(--u)*3);font-size:calc(var(--u)*.8);letter-spacing:.2em;text-transform:uppercase;color:var(--muteD)}
+.s1 .meta span:first-child{color:var(--bronzeL)}
+
+/* 02 heard */
+.s2 .wrap{display:grid;grid-template-columns:1fr 1.25fr;gap:calc(var(--u)*6);width:100%;align-items:center}
+.s2 .photo{position:relative;height:calc(var(--u)*40);border-radius:2px;overflow:hidden}
+.s2 .photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) sepia(.12) contrast(.98)}
+.s2 .photo figcaption{position:absolute;left:calc(var(--u)*1.4);bottom:calc(var(--u)*1.2);font-size:calc(var(--u)*.72);letter-spacing:.2em;text-transform:uppercase;color:#efe8db}
+.s2 .list{margin-top:calc(var(--u)*3.2);display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.s2 .it{padding:calc(var(--u)*1.7) calc(var(--u)*1.6) calc(var(--u)*1.7) 0;border-bottom:1px solid var(--line)}
+.s2 .it:nth-child(odd){border-right:1px solid var(--line)}
+.s2 .it:nth-child(even){padding-left:calc(var(--u)*1.8)}
+.s2 .it .n{font-family:var(--serif);font-style:italic;color:var(--bronze);font-size:calc(var(--u)*1.3)}
+.s2 .it h3{font-family:var(--serif);font-weight:500;font-size:calc(var(--u)*1.75);line-height:1.15;margin:.3em 0 .35em}
+.s2 .it p{font-size:calc(var(--u)*.92);line-height:1.55;color:var(--mute);font-weight:400}
+
+/* 03 solution */
+.s3 .wrap{width:100%;display:flex;flex-direction:column;justify-content:center}
+.s3 .quote{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*4.6);line-height:1.04;max-width:15.5em;color:var(--paper)}
+.s3 .quote i{color:var(--bronzeL)}
+.s3 .three{display:grid;grid-template-columns:repeat(3,1fr);margin-top:calc(var(--u)*4.6);border-top:1px solid var(--lineD)}
+.s3 .c{padding:calc(var(--u)*2) calc(var(--u)*2.4) 0 0}
+.s3 .c+.c{padding-left:calc(var(--u)*2.4);border-left:1px solid var(--lineD)}
+.s3 .c .n{font-size:calc(var(--u)*.75);letter-spacing:.22em;color:var(--bronzeL);font-weight:600}
+.s3 .c h3{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*2.2);margin:.45em 0 .35em}
+.s3 .c p{font-size:calc(var(--u)*.98);line-height:1.6;color:var(--muteD);font-weight:300}
+
+/* 04 demo */
+.s4{background:var(--paper2)}
+.s4 .wrap{display:grid;grid-template-columns:.78fr 1.6fr;gap:calc(var(--u)*4);width:100%;align-items:center}
+.s4 .txt .h2{margin:.35em 0 .45em}
+.btn{display:inline-flex;align-items:center;gap:.9em;margin-top:calc(var(--u)*2.4);padding:1.05em 1.7em;border-radius:999px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:calc(var(--u)*.86);letter-spacing:.16em;text-transform:uppercase;font-weight:600;transition:background .3s,transform .3s}
+.btn:hover{background:#000;transform:translateY(-1px)}
+.btn svg{width:1.2em;height:1.2em}
+.s4 .note{margin-top:calc(var(--u)*1.2);font-size:calc(var(--u)*.78);color:var(--mute)}
+.stage{position:relative;height:calc(var(--u)*40)}
+.browser{position:absolute;left:0;top:0;width:70%;border-radius:calc(var(--u)*.6);overflow:hidden;background:#fff;box-shadow:0 calc(var(--u)*2.4) calc(var(--u)*5) rgba(27,26,24,.22),0 0 0 1px rgba(27,26,24,.08)}
+.browser .bar{height:calc(var(--u)*1.7);background:#ebe5da;display:flex;align-items:center;gap:calc(var(--u)*.4);padding:0 calc(var(--u)*.8)}
+.browser .bar i{width:calc(var(--u)*.5);height:calc(var(--u)*.5);border-radius:50%;background:#cfc6b7}
+.browser .bar span{margin-left:calc(var(--u)*1.2);font-size:calc(var(--u)*.62);color:#8b8377;letter-spacing:.04em}
+.browser img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.phone{position:absolute;right:0;bottom:0;width:23%;border-radius:calc(var(--u)*2);padding:calc(var(--u)*.45);background:var(--ink);box-shadow:0 calc(var(--u)*2) calc(var(--u)*4) rgba(27,26,24,.32)}
+.phone img{border-radius:calc(var(--u)*1.6);width:100%;aspect-ratio:390/844;object-fit:cover;object-position:top}
+.thumbs{position:absolute;left:0;bottom:0;width:72%;display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*.7)}
+.thumbs figure{border-radius:calc(var(--u)*.35);overflow:hidden;box-shadow:0 calc(var(--u)*.6) calc(var(--u)*1.4) rgba(27,26,24,.18);background:#fff}
+.thumbs img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.thumbs figcaption{font-size:calc(var(--u)*.6);letter-spacing:.16em;text-transform:uppercase;padding:.7em .9em;color:var(--mute);font-weight:600}
+
+/* 05 deliverables */
+.s5 .wrap{width:100%;display:grid;grid-template-columns:1fr 1.7fr;gap:calc(var(--u)*5);align-items:center}
+.s5 .grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
+.s5 .g{padding:calc(var(--u)*1.35) calc(var(--u)*1.6) calc(var(--u)*1.35) 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:calc(var(--u)*2.6) 1fr;align-items:baseline}
+.s5 .g:nth-child(even){padding-left:calc(var(--u)*1.8);border-left:1px solid var(--line)}
+.s5 .g .n{font-family:var(--serif);font-style:italic;color:var(--bronze);font-size:calc(var(--u)*1.25)}
+.s5 .g h3{font-family:var(--serif);font-weight:500;font-size:calc(var(--u)*1.6);line-height:1.15}
+.s5 .g p{grid-column:2;font-size:calc(var(--u)*.88);line-height:1.5;color:var(--mute);margin-top:.35em}
+.s5 .g.wide{grid-column:1/-1;border-left:0;padding-left:0}
+.s5 .tag{display:inline-block;margin-top:calc(var(--u)*1.8);font-size:calc(var(--u)*.78);color:var(--mute);border:1px solid var(--line);border-radius:999px;padding:.6em 1.2em}
+
+/* 06 price */
+.s6 .wrap{width:100%;display:grid;grid-template-columns:1.25fr 1fr;gap:calc(var(--u)*5);align-items:center}
+.pricebox{border:1px solid var(--lineD);padding:calc(var(--u)*3.2) calc(var(--u)*3.4);position:relative;background:linear-gradient(160deg,rgba(168,138,95,.10),rgba(168,138,95,0) 55%)}
+.pricebox .lbl{font-size:calc(var(--u)*.8);letter-spacing:.22em;text-transform:uppercase;color:var(--bronzeL);font-weight:600}
+.pricebox .big{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*10.5);line-height:.9;letter-spacing:-.02em;margin:calc(var(--u)*1.2) 0 calc(var(--u)*.6);color:var(--paper)}
+.pricebox .big small{font-size:.36em;color:var(--bronzeL);font-style:italic;margin-left:.2em;letter-spacing:0}
+.pricebox .what{font-family:var(--serif);font-size:calc(var(--u)*1.7);line-height:1.25;color:#e3dccf}
+.pricebox .pay{display:flex;gap:calc(var(--u)*1.2);margin-top:calc(var(--u)*2.2);flex-wrap:wrap}
+.pill{border:1px solid var(--lineD);border-radius:999px;padding:.7em 1.3em;font-size:calc(var(--u)*.85);color:#d9d2c5}
+.extras h3{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*2.2);margin-bottom:calc(var(--u)*1.4)}
+.ex{display:flex;justify-content:space-between;align-items:baseline;gap:calc(var(--u)*2);padding:calc(var(--u)*1.3) 0;border-top:1px solid var(--lineD)}
+.ex:last-child{border-bottom:1px solid var(--lineD)}
+.ex b{font-family:var(--serif);font-weight:500;font-size:calc(var(--u)*1.5)}
+.ex span{font-size:calc(var(--u)*.86);color:var(--muteD);text-align:right;max-width:15em;line-height:1.45}
+
+/* 07 growth */
+.s7 .wrap{width:100%;display:flex;flex-direction:column;justify-content:center}
+.s7 .top{display:flex;justify-content:space-between;align-items:flex-end;gap:calc(var(--u)*4)}
+.s7 .top .lead{max-width:27em;font-size:calc(var(--u)*1)}
+.s7 .cols{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:calc(var(--u)*1.6);margin-top:calc(var(--u)*3)}
+.card{border:1px solid var(--line);padding:calc(var(--u)*2) calc(var(--u)*2.1);background:rgba(255,255,255,.35);display:flex;flex-direction:column}
+.card .t{font-size:calc(var(--u)*.72);letter-spacing:.2em;text-transform:uppercase;color:var(--bronze);font-weight:600}
+.card h3{font-family:var(--serif);font-weight:500;font-size:calc(var(--u)*1.85);line-height:1.12;margin:.5em 0 .45em}
+.card p{font-size:calc(var(--u)*.88);line-height:1.55;color:var(--mute)}
+.card .foot{margin-top:auto;padding-top:calc(var(--u)*1.4);font-family:var(--serif);font-style:italic;font-size:calc(var(--u)*1.35);color:var(--ink)}
+.card.ad{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.card.ad .t{color:var(--bronzeL)}
+.card.ad p{color:var(--muteD)}
+.tiers{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*1);margin-top:calc(var(--u)*1.1)}
+.tier{border:1px solid var(--lineD);padding:calc(var(--u)*1) calc(var(--u)*1.1)}
+.tier .p{font-family:var(--serif);font-size:calc(var(--u)*2.7);line-height:1}
+.tier .d{font-size:calc(var(--u)*.74);letter-spacing:.14em;text-transform:uppercase;color:var(--muteD);margin-top:.6em}
+.card.ad .small{margin-top:calc(var(--u)*1);font-size:calc(var(--u)*.8);color:var(--muteD);line-height:1.5}
+.next{margin-top:calc(var(--u)*2.2);display:flex;align-items:center;gap:calc(var(--u)*1.4);flex-wrap:wrap;font-size:calc(var(--u)*.86);color:var(--mute)}
+.next em{font-style:normal;letter-spacing:.2em;text-transform:uppercase;font-size:calc(var(--u)*.72);font-weight:600;color:var(--olive)}
+.next span{border-bottom:1px dashed rgba(27,26,24,.25);padding-bottom:.1em}
+
+/* 08 next */
+.s8{background:var(--ink)}
+.s8 .wrap{position:relative;z-index:2;width:62%;display:flex;flex-direction:column;justify-content:center}
+.s8 .h1{font-size:calc(var(--u)*4.7);color:var(--paper)}
+.steps{margin-top:calc(var(--u)*2.6);border-top:1px solid var(--lineD)}
+.step{display:grid;grid-template-columns:calc(var(--u)*4.6) 1fr;align-items:baseline;padding:calc(var(--u)*1.05) 0;border-bottom:1px solid var(--lineD)}
+.step .n{font-family:var(--serif);font-style:italic;font-size:calc(var(--u)*1.6);color:var(--bronzeL)}
+.step h3{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*1.9);color:var(--paper)}
+.step p{grid-column:2;font-size:calc(var(--u)*.88);color:var(--muteD);margin-top:.25em}
+.s8 .portrait{position:absolute;right:calc(var(--u)*3);bottom:0;height:92%;z-index:1}
+.s8 .portrait img{height:100%;width:auto;filter:grayscale(1) contrast(1.05) brightness(1.08);opacity:.9}
+.s8 .glow{position:absolute;right:-6%;top:12%;width:48%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(199,171,128,.38),rgba(199,171,128,0) 62%);z-index:0}
+.s8 .sign{margin-top:calc(var(--u)*2);font-size:calc(var(--u)*.8);letter-spacing:.2em;text-transform:uppercase;color:var(--muteD)}
+.s8 .sign b{color:var(--bronzeL);font-weight:600}
+
+/* nav */
+.dots{position:fixed;right:calc(var(--u)*1.4);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:50;mix-blend-mode:difference}
+.dots a{width:7px;height:7px;border-radius:50%;background:#fff;opacity:.35;transition:opacity .3s,transform .3s}
+.dots a.on{opacity:1;transform:scale(1.35)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.in .rv{opacity:1;transform:none}
+.in .rv.d1{transition-delay:.08s}.in .rv.d2{transition-delay:.16s}.in .rv.d3{transition-delay:.24s}.in .rv.d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* wide-short screens: keep 16:9 by height */
+@media (min-width:821px) and (min-aspect-ratio:16/9){
+  :root{--u:calc(100vh/56.25)}
+  .scene{width:100%;height:100vh}
+  .scene>.pad,.scene>.inner{margin:0 auto}
+}
+
+/* mobile: vertical screens */
+@media (max-width:820px){
+  :root{--u:3.6px}
+  html{scroll-snap-type:none}
+  .scene{height:auto;min-height:100svh;flex-direction:column}
+  .pad{padding:88px 24px 56px}
+  .idx{top:24px;left:24px;right:24px;font-size:10px}
+  .kicker{font-size:11px}
+  .h2{font-size:38px;line-height:1.05}
+  .lead{font-size:16px}
+  .btn{font-size:12px;padding:16px 22px}
+  .s1 .right{order:-1;flex:none;height:58svh}
+  .s1 .right:after{background:linear-gradient(0deg,var(--ink) 0%,rgba(27,26,24,0) 40%),linear-gradient(180deg,rgba(27,26,24,.45) 0%,rgba(27,26,24,0) 18%)}
+  .s1 .left{padding:0 24px 40px;margin-top:-64px;justify-content:flex-start;gap:28px}
+  .s1 .h1{font-size:56px}
+  .s1 .sub{font-size:21px;margin-top:16px}
+  .s1 .meta{font-size:10px;gap:16px;flex-wrap:wrap}
+  .s1 .idx{color:#fff;opacity:.85}
+  .s2 .wrap,.s4 .wrap,.s5 .wrap,.s6 .wrap{grid-template-columns:1fr;gap:28px}
+  .s2 .photo{height:260px;order:2}
+  .s2 .list{grid-template-columns:1fr}
+  .s2 .it,.s2 .it:nth-child(odd),.s2 .it:nth-child(even){padding:18px 0;border-right:0}
+  .s2 .it .n{font-size:16px}.s2 .it h3{font-size:23px}.s2 .it p{font-size:14.5px}
+  .s3 .quote{font-size:38px}
+  .s3 .three{grid-template-columns:1fr;margin-top:36px}
+  .s3 .c,.s3 .c+.c{padding:20px 0;border-left:0;border-bottom:1px solid var(--lineD)}
+  .s3 .c .n{font-size:10px}.s3 .c h3{font-size:26px}.s3 .c p{font-size:15px}
+  .stage{height:auto;display:flex;flex-direction:column;gap:14px}
+  .browser,.phone,.thumbs{position:relative;inset:auto;width:100%}
+  .browser{display:none}
+  .phone{width:62%;margin:0 auto;border-radius:30px;padding:6px}
+  .phone img{border-radius:25px}
+  .thumbs{grid-template-columns:1fr 1fr;gap:10px}
+  .thumbs figcaption{font-size:9.5px}
+  .s4 .note{font-size:12px}
+  .s5 .grid{grid-template-columns:1fr}
+  .s5 .g,.s5 .g:nth-child(even){padding:16px 0;border-left:0;grid-template-columns:34px 1fr}
+  .s5 .g .n{font-size:16px}.s5 .g h3{font-size:21px}.s5 .g p{font-size:14px}
+  .s5 .tag{font-size:12px}
+  .pricebox{padding:28px 22px}
+  .pricebox .lbl{font-size:10.5px}
+  .pricebox .big{font-size:88px}
+  .pricebox .what{font-size:21px}
+  .pill{font-size:13px}
+  .extras h3{font-size:26px}
+  .ex{flex-direction:column;gap:6px;padding:16px 0}
+  .ex b{font-size:20px}.ex span{font-size:14px;text-align:left;max-width:none}
+  .s7 .top{flex-direction:column;align-items:flex-start;gap:16px}
+  .s7 .top .lead{font-size:15.5px}
+  .s7 .cols{grid-template-columns:1fr;gap:14px;margin-top:28px}
+  .card{padding:22px}
+  .card .t{font-size:10px}.card h3{font-size:24px}.card p{font-size:14.5px}.card .foot{font-size:19px}
+  .tier .p{font-size:34px}.tier .d{font-size:10px}.card.ad .small{font-size:13px}
+  .next{font-size:13.5px;gap:10px}.next em{font-size:10px;width:100%}
+  .s8 .wrap{width:100%}
+  .s8 .h1{font-size:46px}
+  .step{grid-template-columns:44px 1fr;padding:16px 0}
+  .step .n{font-size:20px}.step h3{font-size:23px}.step p{font-size:14px}
+  .s8 .portrait{position:relative;right:auto;height:auto;width:70%;margin:20px auto -56px;order:2}
+  .s8 .portrait img{width:100%;height:auto}
+  .s8 .glow{width:110%;right:-30%;top:auto;bottom:0}
+  .s8 .sign{font-size:10.5px;line-height:1.8}
+  .dots{display:none}
+}
+@media print{
+  @page{size:1600px 900px;margin:0}
+  html{scroll-snap-type:none}
+  :root{--u:16px}
+  .scene{height:900px;min-height:0;page-break-after:always;break-after:page}
+  .rv{opacity:1!important;transform:none!important}
+  .dots{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="dots" aria-label="Слайди">
+  <a href="#s1" aria-label="01"></a><a href="#s2" aria-label="02"></a><a href="#s3" aria-label="03"></a><a href="#s4" aria-label="04"></a><a href="#s5" aria-label="05"></a><a href="#s6" aria-label="06"></a><a href="#s7" aria-label="07"></a><a href="#s8" aria-label="08"></a>
+</nav>
+
+<!-- 01 -->
+<section class="scene s1" id="s1">
+  <div class="idx"><span><b>01</b> / 08</span><span>NetWorX</span></div>
+  <div class="left">
+    <div class="kicker rv">Комерційна пропозиція</div>
+    <div>
+      <h1 class="h1 rv d1">Іван Трофимчук<span class="x">×</span>NetWorX</h1>
+      <p class="sub rv d2">Сайт, який підкреслює ваш рівень сьогодні — і створює фундамент для наступного етапу вашого бренду.</p>
+    </div>
+    <div class="meta rv d3"><span>Індивідуально для вас</span><span>Рівне · листопад 2026</span></div>
+  </div>
+  <div class="right"><img src="assets/ivan-hero.webp" alt="Іван Трофимчук" width="1200" height="1801"></div>
+</section>
+
+<!-- 02 -->
+<section class="scene paper s2 pad" id="s2">
+  <div class="idx"><span><b>02</b> / 08</span><span>Ми вас почули</span></div>
+  <div class="wrap">
+    <figure class="photo rv"><img src="assets/event-corp.webp" alt="Захід, який веде Іван" loading="lazy"><figcaption>Живі емоції · без штучного пафосу</figcaption></figure>
+    <div>
+      <div class="kicker rv">Ми вас почули</div>
+      <h2 class="h2 rv d1" style="margin-top:.35em">Попит уже є. <i>Тепер</i> — про рівень.</h2>
+      <div class="list">
+        <div class="it rv d1"><div class="n">i.</div><h3>Графік майже заповнений</h3><p>Мета — не більше подій за будь-яку ціну, а правильні клієнти.</p></div>
+        <div class="it rv d2"><div class="n">ii.</div><h3>Час — найцінніший ресурс</h3><p>Первинні питання мають закриватися без вашої участі.</p></div>
+        <div class="it rv d3"><div class="n">iii.</div><h3>Новий імідж</h3><p>Онлайн-образ, що відповідає вашому рівню на сцені.</p></div>
+        <div class="it rv d4"><div class="n">iv.</div><h3>Освітні напрями</h3><p>Клуб і школа публічних виступів, навчання ведучих.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="scene dark s3 pad" id="s3">
+  <div class="idx"><span><b>03</b> / 08</span><span>Рішення</span></div>
+  <div class="wrap">
+    <div class="kicker rv">Рішення</div>
+    <p class="quote rv d1" style="margin-top:.5em">Не «ще один сайт», а <i>цифрова візитівка</i>, яка працює на ваш рівень.</p>
+    <div class="three">
+      <div class="c rv d2"><div class="n">01</div><h3>Довіра</h3><p>Відео, відгуки та події формують враження ще до першої розмови.</p></div>
+      <div class="c rv d3"><div class="n">02</div><h3>Обґрунтування ціни</h3><p>Стримана преміальна подача пояснює вартість без зайвих слів.</p></div>
+      <div class="c rv d4"><div class="n">03</div><h3>Звернення</h3><p>Форма, сповіщення та AI-асистент беруть на себе першу комунікацію.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="scene s4 pad" id="s4">
+  <div class="idx"><span><b>04</b> / 08</span><span>Демосайт</span></div>
+  <div class="wrap">
+    <div class="txt">
+      <div class="kicker rv">Демосайт</div>
+      <h2 class="h2 rv d1">Його вже можна <i>відкрити</i>.</h2>
+      <p class="lead rv d2">Ми зібрали демоверсію під вас. Це основа, яку доопрацюємо за вашими побажаннями.</p>
+      <a class="btn rv d3" href="https://ivan-trofymchuk-premium.netlify.app/" target="_blank" rel="noopener">Інтерактивний перегляд
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <p class="note rv d4">Найкраще дивитися і з комп’ютера, і з телефона.</p>
+    </div>
+    <div class="stage rv d2">
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>ivan-trofymchuk-premium.netlify.app</span></div><img src="assets/demo-d-hero.webp" alt="Демосайт: перший екран" loading="lazy"></div>
+      <div class="thumbs">
+        <figure><img src="assets/demo-d-about.webp" alt="Блок «Про Івана»" loading="lazy"><figcaption>Про Івана</figcaption></figure>
+        <figure><img src="assets/demo-d-directions.webp" alt="Блок «Формати»" loading="lazy"><figcaption>Формати подій</figcaption></figure>
+        <figure><img src="assets/demo-d-reviews.webp" alt="Блок «Відгуки»" loading="lazy"><figcaption>Відгуки</figcaption></figure>
+        <figure><img src="assets/demo-d-chat.webp" alt="AI-асистент на демосайті" loading="lazy"><figcaption>AI-асистент</figcaption></figure>
+      </div>
+      <div class="phone"><img src="assets/demo-m-hero.webp" alt="Демосайт на телефоні" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 05 -->
+<section class="scene paper s5 pad" id="s5">
+  <div class="idx"><span><b>05</b> / 08</span><span>Що отримує Іван</span></div>
+  <div class="wrap">
+    <div>
+      <div class="kicker rv">Що ви отримуєте</div>
+      <h2 class="h2 rv d1" style="margin-top:.35em">Індивідуальний сайт. <i>Не</i> шаблон і не Tilda.</h2>
+      <span class="tag rv d2">Сайт і права на нього — ваші</span>
+    </div>
+    <div class="grid">
+      <div class="g rv d1"><span class="n">01</span><h3>Дизайн</h3><p>Стриманий преміальний мінімалізм під ваш образ.</p></div>
+      <div class="g rv d1"><span class="n">02</span><h3>Структура</h3><p>Відео, відгуки, події, послуги, FAQ, «Забронювати дату».</p></div>
+      <div class="g rv d2"><span class="n">03</span><h3>Адмінпанель</h3><p>Тексти й фото редагуєте самі.</p></div>
+      <div class="g rv d2"><span class="n">04</span><h3>Заявки</h3><p>Форма та сповіщення в Telegram або інший канал.</p></div>
+      <div class="g rv d3"><span class="n">05</span><h3>AI-асистент</h3><p>Первинні відповіді, кваліфікація звернень, збір контактів. Тариф і ліміти — окремо.</p></div>
+      <div class="g rv d3"><span class="n">06</span><h3>SEO-основа</h3><p>Базова підготовка до пошуку.</p></div>
+      <div class="g wide rv d4"><span class="n">07</span><h3>Доступи та договір</h3><p>Передаємо всі доступи й права на сайт, працюємо за договором.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="scene dark s6 pad" id="s6">
+  <div class="idx"><span><b>06</b> / 08</span><span>Прозора вартість</span></div>
+  <div class="wrap">
+    <div class="pricebox rv">
+      <div class="lbl">Індивідуальний сайт</div>
+      <div class="big">$1 200<small>разово</small></div>
+      <div class="what">Дизайн, структура, адмінпанель, заявки, AI-асистент, SEO-основа, доступи.</div>
+      <div class="pay"><span class="pill">Можна двома платежами</span><span class="pill">Графік узгоджуємо</span></div>
+    </div>
+    <div class="extras">
+      <h3 class="rv d1">Окремо</h3>
+      <div class="ex rv d2"><b>Домен</b><span>оплачується окремо</span></div>
+      <div class="ex rv d3"><b>Платні AI-сервіси</b><span>за потреби, після уточнення</span></div>
+      <div class="ex rv d4"><b>Узгоджені доопрацювання</b><span>індивідуальний розрахунок</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="scene paper s7 pad" id="s7">
+  <div class="idx"><span><b>07</b> / 08</span><span>Розвиток бренду</span></div>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="kicker rv">Розвиток бренду</div>
+        <h2 class="h2 rv d1" style="margin-top:.35em">Сайт — <i>фундамент</i>. Далі — ваші напрями.</h2>
+      </div>
+      <p class="lead rv d2">Не масово нарощувати заявки, а розвивати преміальний сегмент і тестувати освітні продукти.</p>
+    </div>
+    <div class="cols">
+      <div class="card rv d1"><div class="t">Сторінка · пріоритет</div><h3>Школа та клуб публічних виступів</h3><p>Окрема посадкова сторінка для освітнього напряму.</p><div class="foot">Індивідуальний розрахунок</div></div>
+      <div class="card rv d2"><div class="t">Сторінка · другий напрям</div><h3>Тренерство, коучинг або навчання ведучих</h3><p>Тематику обираєте ви.</p><div class="foot">Індивідуальний розрахунок</div></div>
+      <div class="card ad rv d3"><div class="t">Таргетована реклама</div><h3>Релевантні клієнти, вищий чек</h3>
+        <div class="tiers"><div class="tier"><div class="p">$600</div><div class="d">1 місяць · послуга</div></div><div class="tier"><div class="p">$1 500</div><div class="d">пакет · 3 місяці</div></div></div>
+        <p class="small">Рекламний бюджет — окремо. Фінальний перелік робіт погоджуємо.</p></div>
+    </div>
+    <div class="next rv d4"><em>Наступні етапи · не входять у пропозицію</em><span>SMM</span><span>Threads</span><span>Стратегія особистого бренду</span><span>Відеокурс</span></div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="scene s8 pad" id="s8">
+  <div class="idx" style="color:var(--paper)"><span><b>08</b> / 08</span><span>Наступний крок</span></div>
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="kicker rv">Наступний крок</div>
+    <h2 class="h1 rv d1" style="margin-top:.3em">Почнімо з <i>ваших</i> побажань.</h2>
+    <div class="steps">
+      <div class="step rv d1"><span class="n">01</span><h3>Побажання до демо</h3><p>Напишіть, що змінити, — зручно текстом.</p></div>
+      <div class="step rv d2"><span class="n">02</span><h3>Обсяг і сторінки</h3><p>Фіксуємо склад сайту та додаткові напрями.</p></div>
+      <div class="step rv d3"><span class="n">03</span><h3>Умови</h3><p>Погоджуємо вартість і графік платежів.</p></div>
+      <div class="step rv d4"><span class="n">04</span><h3>Договір і старт</h3><p>Підписуємо — і беремося до роботи.</p></div>
+    </div>
+    <div class="sign rv d4"><b>NetWorX</b> &nbsp;·&nbsp; для Івана Трофимчука</div>
+  </div>
+  <div class="portrait"><img src="assets/ivan-cut.webp" alt="Іван Трофимчук" loading="lazy"></div>
+</section>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');const i=[...document.querySelectorAll('.scene')].indexOf(e.target);document.querySelectorAll('.dots a').forEach((a,k)=>a.classList.toggle('on',k===i))}}),{threshold:.35});
+document.querySelectorAll('.scene').forEach(s=>io.observe(s));
+document.addEventListener('keydown',e=>{const S=[...document.querySelectorAll('.scene')];const y=window.scrollY+5;let i=S.findIndex(s=>s.offsetTop+s.offsetHeight>y);if(['ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();(S[i+1]||S[i]).scrollIntoView({behavior:'smooth'})}if(['ArrowUp','PageUp'].includes(e.key)){e.preventDefault();(S[i-1]||S[i]).scrollIntoView({behavior:'smooth'})}});
+</script>
+</body>
+</html>
